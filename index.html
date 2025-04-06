@@ -1,94 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kaustubh V Koranglekar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Personal portfolio website showcasing skills, projects, and professional experience">
+    <meta name="theme-color" content="#e67e22">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="profile">
-        <img src="kaustubh.jpeg" alt="Kaustubh Koranglekar" class="profile-photo">
-        <h1>Kaustubh V Koranglekar</h1>
-        <p class="title"> Computer Vision Engineer</p>
-        <p class="contact">
-          <a href="https://in.linkedin.com/in/kkoranglekar" target="_blank">LinkedIn</a> |
-          <a href="mailto:learnkaustubh@gmail.com">Email</a>
-        </p>
-      </div>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Your Name</h1>
+                <h2>Web Developer & Designer</h2>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="mailto:your.email@example.com" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=yourid" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="education">
-      <h2>Education</h2>
-      <div class="edu-item">
-        <h3>Master of Technology in Mechatronics Engineering</h3>
-        <p>Indian Institute of Technology, 2025</p>
-        <p><strong>Thesis Title:</strong> Automated Lunar Crater Detection from ISRO Chandrayaan-II TMC-2 DTM Images</p>
-        <p><strong>Thesis Abstract:</strong> Brief description of your thesis abstract.</p>
-        <p><strong>CGPA:</strong> 9.02/10</p>
-      </div>
+    <nav>
+        <div class="container">
+            <div class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Profile Picture" width="300" height="300" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer and designer with expertise in creating elegant, user-friendly websites. I focus on writing clean, efficient code and designing intuitive user experiences.</p>
+                    <p>I have a strong background in front-end development and enjoy tackling complex problems with creative solutions. My goal is to create web applications that are not only aesthetically pleasing but also highly functional and accessible.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="experience">
-      <h2>Work Experience</h2>
-      <div class="exp-item">
-        <h3>Software Developer | Company Name</h3>
-        <p>Location | Duration</p>
-        <ul>
-          <li>Developed web applications using JavaScript, HTML, CSS, React.js</li>
-          <li>Collaborated with cross-functional teams to implement new features</li>
-        </ul>
-      </div>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Master of Science in Computer Science</h3>
+                        <h4>University Name</h4>
+                        <p class="timeline-date">2018 - 2020</p>
+                        <p>GPA: 3.8/4.0</p>
+                        <p>Specialized in Web Development and User Interface Design</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <h4>University Name</h4>
+                        <p class="timeline-date">2014 - 2018</p>
+                        <p>GPA: 3.7/4.0</p>
+                        <p>Minor in Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>Project Title</h3>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-        <p>Description: A short description of the project, its goals, and outcomes.</p>
-        <p><a href="link-to-project" target="_blank">View Project</a></p>
-      </div>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Web Developer</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2020 - Present</p>
+                        <ul class="responsibilities">
+                            <li>Lead the front-end development team on major client projects</li>
+                            <li>Develop responsive and accessible web applications</li>
+                            <li>Collaborate with UX/UI designers to implement intuitive user interfaces</li>
+                            <li>Mentor junior developers and conduct code reviews</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Front-End Developer</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2018 - 2020</p>
+                        <ul class="responsibilities">
+                            <li>Created responsive websites using HTML, CSS, and JavaScript</li>
+                            <li>Collaborated with back-end developers to integrate front-end components</li>
+                            <li>Optimized web applications for maximum speed and scalability</li>
+                            <li>Implemented design and functionality improvements based on user feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-      <h2>Skills & Certifications</h2>
-      <div class="skills-list">
-        <div class="skill">JavaScript</div>
-        <div class="skill">React.js</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">HTML & CSS</div>
-        <div class="certification">Certified Web Developer</div>
-      </div>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>jQuery</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="achievements">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Published a research paper on AI in IEEE Journal</li>
-        <li>Won 1st place in Hackathon XYZ</li>
-      </ul>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project1.jpg" alt="Project 1" width="400" height="225" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A responsive e-commerce website built with HTML, CSS, and JavaScript. Includes product filtering, shopping cart, and checkout functionality.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="touch-target" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="touch-target" aria-label="Source Code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project2.jpg" alt="Project 2" width="400" height="225" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A customizable portfolio template for creative professionals. Features smooth scrolling, responsive design, and contact form.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="touch-target" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="touch-target" aria-label="Source Code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="extracurricular">
-      <h2>Extracurricular Activities</h2>
-      <ul>
-        <li>President of the Computer Science Club</li>
-        <li>Volunteer for Code for Good</li>
-      </ul>
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-container">
+                <div class="publication-item">
+                    <h3>Trends in Responsive Web Design</h3>
+                    <p class="publication-authors">Author, A., & Co-author, B.</p>
+                    <p class="publication-journal">Journal of Web Development, 2021</p>
+                    <a href="#" target="_blank" class="publication-link">Read Publication</a>
+                </div>
+                <div class="publication-item">
+                    <h3>Improving Web Accessibility: A Case Study</h3>
+                    <p class="publication-authors">Author, A., & Co-author, B.</p>
+                    <p class="publication-journal">International Conference on Web Accessibility, 2020</p>
+                    <a href="#" target="_blank" class="publication-link">Read Publication</a>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-container">
+                <div class="certification-item">
+                    <div class="certification-logo">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Front-End Web Developer Certification</h3>
+                        <p>Issuing Organization</p>
+                        <p class="certification-date">Issued: January 2021</p>
+                        <a href="#" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-logo">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Responsive Web Design Certification</h3>
+                        <p>Issuing Organization</p>
+                        <p class="certification-date">Issued: June 2020</p>
+                        <a href="#" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognitions</h2>
+            <div class="awards-container">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-info">
+                        <h3>Best Website Design Award</h3>
+                        <p>Awarding Organization</p>
+                        <p class="award-date">2022</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-info">
+                        <h3>Web Development Hackathon Winner</h3>
+                        <p>Hackathon Name</p>
+                        <p class="award-date">2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Reading</h3>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Hiking</h3>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>City, Country</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://scholar.google.com/citations?user=yourid" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
